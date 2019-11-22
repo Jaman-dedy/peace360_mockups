@@ -1,17 +1,19 @@
 .header {
+  margin-top: -4rem;
   width: 100%;
-  height: 4rem;
+  height: 5rem;
   background-color: white;
   border-bottom: rgba(0, 0, 0, 0.157) 1px solid;
   display: flex;
-  padding-top: 2rem;
+  padding-top: 4.4rem;
   justify-content: space-between;
+  position: fixed;
 }
 .header_logo {
-  padding-left: 15rem;
+  padding-left: 11rem;
 }
 .search {
-  padding-right: 15rem;
+  padding-right: 11rem;
 }
 .menu {
   color: #5a5554;
@@ -29,9 +31,10 @@
 }
 
 .main {
-  margin: 3rem 15rem;
+  margin: 3rem 11rem;
 }
 .slider {
+  padding-top: 8rem;
   width: 100%;
   height: 30rem;
   border-radius: 1rem;
@@ -55,16 +58,136 @@
   padding: 3rem;
 }
 .categories {
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 .category-title {
-  font-family: "Playfair Display", serif;
-  font-size: 1.5rem;
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 1.2rem;
   border-bottom: solid 1.5px #5a55541f;
   padding-bottom: 1rem;
+  font-weight: 700;
+  color: #5a5554;
 }
 .category-title span {
-   width: fit-content;
-   border-bottom: black 1.5px solid; 
-   padding-bottom: 1rem;
+  width: fit-content;
+  border-bottom: #5a5554 1.5px solid;
+  padding-bottom: 1rem;
+}
+.experiences {
+  grid-area: experience;
+}
+.most-seen {
+  grid-area: mostSeen;
+}
+
+.articles {
+  display: grid;
+  grid-template-areas: "experience experience mostSeen";
+  grid-gap: 1.3rem;
+}
+
+.experiences {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1.3rem;
+}
+.experience {
+  width: 15rem;
+  height: 5rem;
+  padding-top: 1rem;
+}
+.experience img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.4rem;
+}
+.title-experience {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  padding-top: 0.3rem;
+  padding-bottom: 0.7rem;
+  color: #5a5554;
+}
+.detail-experience {
+  font-family: "M PLUS 1p", sans-serif;
+  color: #5a5554a8;
+  font-size: 0.7rem;
+}
+.most-seen-experience {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 0.2rem;
+}
+.img-most-seen {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.img-most-seen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.title-most-seen {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 0.8rem;
+  color: #5a5554;
+}
+.details-most-seen {
+  padding-left: 0.6rem;
+}
+.detail-most-seen {
+  font-family: "M PLUS 1p", sans-serif;
+  color: #5a5554a8;
+  font-size: 0.7rem;
+  padding-top: 1.2rem;
+}
+.pagination {
+  margin-top: 1rem;
+  width: 3.7rem;
+  height: 1rem;
+  border: solid 1px #5a55541f;
+  padding: 0.5rem;
+  color: #5a55548a;
+  border-radius: 0.4rem;
+  box-shadow: 1px 1px 1px #aaaaaa;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.pagination a {
+  text-decoration: none;
+  color: #5a555480;
+}
+.pagination a:active,
+.pagination a:hover {
+  color: #5a5554;
+}
+.footer{
+  padding-top: 9rem;
+  width: 100%;
+  height: 15rem;
+  text-align: center;
+  border-top:rgba(0, 0, 0, 0.157) 1px solid;
+  color:  #5a5554;
+}
+.footer-title{
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: "M PLUS 1p", sans-serif;
+}
+.social-media {
+  font-size: 2rem;
+}
+.social-media a {
+  text-decoration: none;
+  color: #5a5554;
+}
+.social-media a:active,
+.social-media a:hover{
+  color: #54768b;
 }
