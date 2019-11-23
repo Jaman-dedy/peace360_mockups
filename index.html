@@ -20,30 +20,62 @@
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
     crossorigin="anonymous"
   />
+  
   </head>
   <body>
     <nav class="header">
-      <div class="header_logo">Logo</div>
+      <div class="header_logo">
+        <img src="./assets/img/logo.png" alt="">
+      </div>
       <div class="menu">
         <a href="">HOME</a>
-        <a href="">BLOG</a>
         <a href="">CONSULTANCY & RESEARCH</a>
         <a href="">GET INVOLVED</a>
         <a href="">CONTACT</a>
         <a href="">ABOUT US</a>
       </div>
-      <div class="search">search</div>
+      <div class="search">
+        <form>
+          <input type="text" placeholder="Search..." name="search">
+         <button type="submit"><i class="fas fa-search"></i>
+
+         </button>
+        </form>
+      </div>
     </nav>
     <main class="main">
-      <div class="article-slider">
+      <div class="article-slider fade">
         <div class="slider">
-          <img src="./assets/img/workspace.jpg" alt="" />
+        <div class="overlay"></div>
+          <img src="./assets/img/Africa-Documentary6609.jpg" alt="" />
         </div>
         <div class="front-title">
-          Peace is a concept of societal friendship and harmony in the absence
-          of hostility and violence
+            Peace is the result of retraining your mind to process life as it is, rather than as you think it should be
         </div>
       </div>
+      <div class="article-slider fade">
+          <div class="slider">
+          <div class="overlay"></div>
+            <img src="./assets/img/peace-in-africa.jpg" alt="" />
+          </div>
+          <div class="front-title">
+              You find peace not by rearranging the circumstances of your life, but by realizing who you are at the deepest level
+          </div>
+        </div>
+        <div class="article-slider fade">
+            <div class="slider">
+            <div class="overlay"></div>
+              <img src="./assets/img/happy.jpg" alt="" />
+            </div>
+            <div class="front-title">
+                People that are happy all the time work at it. It's not because they have perfect lives and situations go their way.
+            </div>
+          </div>
+      <div class="slid-dot">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
       <div class="categories">
         <div class="category-title">
           <span>Gender and civic engagement</span>
@@ -283,17 +315,25 @@
           </div>
         </div>
       </div>
+      <div class="pagination-experience">
+          <a href="#"><span>&#10094;</span></a>
+          <a href="#" class="active">1</a>
+          <a href="#" >2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#"><span>&#10095;</span></a>
+        </div>
     </main>
     <div class="footer">
       <div class="footer-title">peace360</div>
       <div class="social-media">
         <a href="#"><i class="fab fa-facebook"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></i></a>
-          
-          
-          
+        <a href="#"><i class="fab fa-instagram"></i></i></a> 
       </div>
     </div>
+    <script src="./assets/js/slider.js"></script>
   </body>
 </html>

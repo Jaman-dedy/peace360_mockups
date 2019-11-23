@@ -8,21 +8,29 @@
   padding-top: 4.4rem;
   justify-content: space-between;
   position: fixed;
+  z-index: 250;
 }
 .header_logo {
-  padding-left: 11rem;
+  padding-left: 0.4rem;
+  width: 2rem;
+  margin-top: -1.5rem;
 }
 .search {
-  padding-right: 11rem;
+  padding-right: 2rem;
+  margin-top: -.9rem;
 }
 .menu {
   color: #5a5554;
+  margin-left: 15.3rem;
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 1rem;
+  
 }
 .menu a {
   text-decoration: none;
-  font-weight: 800;
+  font-weight: 700;
   color: #5a5554;
-  padding-right: 1rem;
+  padding-right: 0.9rem;
 }
 
 .menu a:hover,
@@ -39,6 +47,16 @@
   height: 30rem;
   border-radius: 1rem;
 }
+.overlay {
+  padding-top: 8rem;
+  width: 67rem;
+  height: 22rem;
+  background-color: #0e0d0da1;
+  z-index: 90;
+  border-radius: 1rem;
+  position: absolute;
+  cursor: pointer;
+}
 
 .slider img {
   width: 100%;
@@ -53,9 +71,26 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 2rem;
-  z-index: 100px;
+  z-index: 200;
   margin-top: -13rem;
   padding: 3rem;
+  position: relative;
+}
+.dot {
+  position: relative;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgba(207, 204, 204, 0.596);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.9s ease;
+  z-index: 200;
+  cursor: pointer;
+}
+.slid-dot {
+  text-align: right;
+  margin-right: 5.7rem;
 }
 .categories {
   margin-top: 5rem;
@@ -158,6 +193,7 @@
   box-shadow: 1px 1px 1px #aaaaaa;
   text-align: center;
   margin-bottom: 1.5rem;
+  cursor: pointer;
 }
 .pagination a {
   text-decoration: none;
@@ -167,15 +203,15 @@
 .pagination a:hover {
   color: #5a5554;
 }
-.footer{
+.footer {
   padding-top: 9rem;
   width: 100%;
   height: 15rem;
   text-align: center;
-  border-top:rgba(0, 0, 0, 0.157) 1px solid;
-  color:  #5a5554;
+  border-top: rgba(0, 0, 0, 0.157) 1px solid;
+  color: #5a5554;
 }
-.footer-title{
+.footer-title {
   font-weight: 700;
   font-size: 3rem;
   font-family: "M PLUS 1p", sans-serif;
@@ -188,6 +224,79 @@
   color: #5a5554;
 }
 .social-media a:active,
-.social-media a:hover{
+.social-media a:hover {
   color: #54768b;
+}
+.active {
+  background-color: rgba(255, 255, 255, 0.938);
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 6s;
+  animation-name: fade;
+  animation-duration: 6s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.pagination-experience {
+  display: inline-block;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 22.5rem;
+}
+
+.pagination-experience a {
+  color: #5a5554c9;
+  text-decoration: none;
+  transition: background-color 0.4s;
+  padding: 0.4rem 0.8rem;
+  border-radius: 100%;
+}
+.pagination-experience a.active {
+  background-color: #54768b;
+  color: #fff;
+}
+.pagination-experience a:hover:not(.active) {
+  background-color: #54768b5e;
+}
+.search input[type="text"] {
+  border: none;
+  font-family: "M PLUS 1p", sans-serif;
+  height: 2rem;
+  width: 13rem;
+  border-bottom: 1px rgba(0, 0, 0, 0.157) solid;
+}
+.search input[type="text"]:checked,
+.search input[type="text"]:hover,
+.search input[type="text"]:active,
+.search input[type="text"]:target {
+  border-color: #54768b5e;
+}
+
+.search button {
+  cursor: pointer;
+  border: none;
+}
+.search i {
+  color: #5a5554c9;
+  font-size: 1rem;
+  background-color: #fff;
+}
+.search i:hover {
+  color: #54768be7;
 }
