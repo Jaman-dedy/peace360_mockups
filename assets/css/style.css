@@ -542,22 +542,61 @@ h1 {
 }
 .commenter-avatar {
   grid-area: commenter-avatar;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+}
+.commenter-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  margin-top: -0.9rem;
 }
 .commenter-details {
   grid-area: commenter-details;
+  width: 100%;
+}
+.commenter-details span {
+  color: #5a5554a2;
+  font-size: 0.8rem;
 }
 .comment-posted {
   grid-area: comment-posted;
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+  color: #5a5554d5;
+  font-family: sans-serif;
+  line-height: 1.5;
 }
 .favorite-comment {
   grid-area: favorite-comment;
+  width: 100%;
+  margin-top: 1.5rem;
 }
-
+.favorite-comment span {
+  color: #5a5554a2;
+  font-size: 0.7rem;
+  margin-left: 0.7rem;
+}
+.favorite-comment span:hover {
+  cursor: pointer;
+  color: #54768b;
+}
+.favorite-comment i:hover {
+  cursor: pointer;
+  color: #54768b;
+}
 .comment-reply {
+  margin-top: 2.3rem;
   display: grid;
+  grid-template-columns: 5rem 28rem 6rem;
   grid-template-areas:
-    "commenter-avatar commenter-details commenter-details"
-    "commenter-avatar  comment-posted  comment-posted"
-    "commenter-avatar comment-posted comment-posted"
-    "commenter-avatar favorite-comment favorite-comment";
+    "commenter-avatar commenter-details ............... "
+    "...............  comment-posted  comment-posted "
+    "............... comment-posted comment-posted "
+    "............... favorite-comment ............... ";
+  grid-column-gap: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: #5a555425 1px solid;
 }
