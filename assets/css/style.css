@@ -217,7 +217,6 @@ body {
   color: #5a5554;
   background-color: rgba(0, 0, 0, 0.048);
   margin-bottom: 0;
-  z-index: 500;
 }
 .footer-title {
   font-weight: 700;
@@ -392,8 +391,8 @@ body {
   object-fit: cover;
 }
 .single-article-text {
+  text-align: justify;
   margin-top: 2rem;
-  text-justify: distribute;
   font-family: sans-serif;
   line-height: 1.7;
 }
@@ -413,7 +412,6 @@ body {
   font-size: 0.9rem;
 }
 .socio-share {
-  z-index: 40;
   position: fixed;
   margin-left: -5rem;
 }
@@ -538,4 +536,7 @@ h1 {
   background-color: #5a5554;
   border-radius: 0.6rem;
   cursor: pointer;
+}
+.comment-box button:hover {
+  background-color: #54768b;
 }
