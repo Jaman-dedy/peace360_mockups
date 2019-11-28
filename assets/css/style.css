@@ -540,3 +540,24 @@ h1 {
 .comment-box button:hover {
   background-color: #54768b;
 }
+.commenter-avatar {
+  grid-area: commenter-avatar;
+}
+.commenter-details {
+  grid-area: commenter-details;
+}
+.comment-posted {
+  grid-area: comment-posted;
+}
+.favorite-comment {
+  grid-area: favorite-comment;
+}
+
+.comment-reply {
+  display: grid;
+  grid-template-areas:
+    "commenter-avatar commenter-details commenter-details"
+    "commenter-avatar  comment-posted  comment-posted"
+    "commenter-avatar comment-posted comment-posted"
+    "commenter-avatar favorite-comment favorite-comment";
+}
