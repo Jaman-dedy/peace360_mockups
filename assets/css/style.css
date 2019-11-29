@@ -692,7 +692,37 @@ h1 {
   color: #5a5554cb;
   padding-bottom: 1rem;
 }
+.founder-social-media {
+  cursor: pointer;
+}
 .founder-social-media a {
   color: #5a5554cb;
   font-size: 1.2rem;
+}
+.founder-social-media a:hover {
+  color: #54768b;
+}
+.founder-dot {
+  padding-top: 1rem;
+}
+.founder-dot span:hover {
+  color: #5a5554;
+}
+.dots {
+  position: relative;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgba(207, 204, 204, 0.596);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.9s ease;
+  z-index: 200;
+  cursor: pointer;
+}
+.dots:hover {
+  background-color: #5a5554;
+}
+.actives {
+  background-color: #54768b;
 }
