@@ -646,11 +646,11 @@ h1 {
   color: #5a5554cb;
 }
 .founder-img {
-  height: 4rem;
+  height: 7rem;
 }
 .founder-img img {
   height: 100%;
-  width: 4rem;
+  width: 7rem;
   border-radius: 100%;
 }
 .founder-pagination a {
@@ -660,14 +660,14 @@ h1 {
   font-weight: 100;
 }
 .prev {
-  margin-left: -5rem;
-  margin-top: -3rem;
+  margin-left: -8rem;
+  margin-top: -4rem;
   position: absolute;
   cursor: pointer;
 }
 .next {
-  margin-left: 3.8rem;
-  margin-top: -3rem;
+  margin-left: 7.5rem;
+  margin-top: -4rem;
   position: absolute;
   cursor: pointer;
 }
@@ -675,6 +675,24 @@ h1 {
 .next:hover {
   color: #54768b;
 }
-.founder-description{
-  
+.founder-description {
+  color: #5a5554cb;
+  font-family: sans-serif;
+}
+.founder-description {
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+.founder-details span {
+  display: block;
+  font-family: sans-serif;
+}
+.founder-function {
+  color: #5a5554cb;
+  padding-bottom: 1rem;
+}
+.founder-social-media a {
+  color: #5a5554cb;
+  font-size: 1.2rem;
 }
