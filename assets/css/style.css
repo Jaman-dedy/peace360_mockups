@@ -747,7 +747,6 @@ h1 {
 }
 .tab {
   text-align: center;
-  border-bottom: #5a555428 solid 1px;
 }
 .tab button.active {
   color: #54768b;
@@ -781,4 +780,36 @@ h1 {
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 17px;
+}
+.profile-tab {
+  color: #5a5554;
+  padding: 2rem 2rem;
+  margin-top: 1rem;
+  width: 100%;
+  height: fit-content;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.274);
+}
+.profile-tab span {
+  display: block;
+}
+.profile-location {
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+}
+.profile-details {
+  color: #5a55549a;
+  font-size: 0.9rem;
+}
+.profile-bio {
+  line-height: 1.3;
+  text-align: justify;
+}
+.profile-skills skill {
+  padding-right: 0.7rem;
+  font-size: 0.9rem;
+  color: #54768bc9;
+  cursor: pointer;
+}
+.profile-skills skill:hover {
+  color: #3c525f;
 }
