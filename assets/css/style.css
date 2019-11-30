@@ -739,3 +739,46 @@ h1 {
   height: 100%;
   border-radius: 100%;
 }
+.profile-page {
+  padding-top: 7rem;
+  width: 45rem;
+  margin-left: 12rem;
+  color: #5a5554;
+}
+.tab {
+  text-align: center;
+  border-bottom: #5a555428 solid 1px;
+}
+.tab button.active {
+  color: #54768b;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 3s;
+}
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.tab button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
