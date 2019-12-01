@@ -755,7 +755,7 @@ h1 {
   display: none;
   padding: 6px 12px;
   -webkit-animation: fadeEffect 1s;
-  animation: fadeEffect 3s;
+  animation: fadeEffect 2s;
 }
 @-webkit-keyframes fadeEffect {
   from {
@@ -783,8 +783,9 @@ h1 {
 }
 .profile-tab {
   color: #5a5554;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem 2rem;
   margin-top: 1rem;
+  margin-bottom: 2.5rem;
   width: 100%;
   height: fit-content;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.274);
@@ -812,4 +813,94 @@ h1 {
 }
 .profile-skills skill:hover {
   color: #3c525f;
+}
+.my-experience {
+  border-bottom: #5a55541c solid 1px;
+  padding-bottom: 1rem;
+}
+.follow-me-on {
+  margin-left: 14rem;
+  width: 15rem;
+  margin-top: 2rem;
+  color: #5a5554d5;
+  text-align: center;
+  border-top: #5a555431 solid 1px;
+  border-bottom: solid 1px #5a555431;
+  padding-bottom: 1.5rem;
+}
+.follow-me-on a {
+  padding-right: 0.5rem;
+  font-size: 1.5rem;
+  color: #5a5554ea;
+}
+.my-posts img {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+}
+.profile-posts {
+  padding-top: 2rem;
+}
+.profile-posts a {
+  text-decoration: none;
+}
+.my-follower-img {
+  grid-area: my-follower-img;
+}
+.my-follower-name {
+  grid-area: my-follower-name;
+}
+.my-follower-follow-box {
+  grid-area: my-follower-follow-box;
+}
+
+.my-followers {
+  display: grid;
+  grid-template-areas:
+    "my-follower-img my-follower-name"
+    "my-follower-img my-follower-follow-box";
+  grid-template-columns: 6rem 6rem;
+  height: 4rem;
+  grid-gap: 1rem;
+  padding: 2rem 0rem;
+  border-bottom: #5a555431 solid 1px;
+}
+.my-followers img {
+  margin-top: -1rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+.my-follower-follow-box {
+  margin-top: -1.5rem;
+  text-align: center;
+  border: solid 1px #5a555491;
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  width: 4rem;
+  height: 0.8rem;
+  color: #5a5554d7;
+}
+.my-follower-follow-box:hover {
+  color: #54768b;
+  border-color: #54768b;
+}
+.my-followee-follow-box {
+  margin-top: -1.5rem;
+  text-align: center;
+  border: solid 1px #5a555491;
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  width: 4rem;
+  height: 0.8rem;
+  background-color: #5a5554;
+  color: #fff;
+}
+.my-followee-follow-box:hover {
+  background-color: #2e424e;
+  border-color: #54768b;
 }
