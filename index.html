@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700,800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
@@ -74,14 +74,83 @@
       <span class="dot"></span>
       <span class="dot"></span>
     </div>
-    <div class="categories">
+    <div class="up-coming-event">
       <div class="category-title">
-        <span>Gender and civic engagement</span>
+        <span>Up coming events</span>
       </div>
-      <div class="articles">
+      <div class="carousel" data-flickity='{ "autoPlay": true  }'>
+        <div class="carousel-cell">
+          <div>
+            <img src="./assets/img/experience1.jpg" alt="" />
+          </div>
+          <div class="title-carousel">
+            Peace is a stress-free state of security and calmness
+          </div>
+          <div class="detail-carousel">
+            📍Kinshasa | 📅 24th Oct 2019
+          </div>
 
-        <div class="experiences">
-          <a href="./singleArticle.html">
+        </div>
+        <div class="carousel-cell">
+          <div>
+            <img src="./assets/img/experience1.jpg" alt="" />
+          </div>
+          <div class="title-carousel">
+            Peace is a stress-free state of security and calmness
+          </div>
+          <div class="detail-experience">
+            📍Kinshasa | 📅 24th Oct 2019
+          </div>
+
+        </div>
+        <div class="carousel-cell">
+          <div>
+            <img src="./assets/img/experience1.jpg" alt="" />
+          </div>
+          <div class="title-carousel">
+            Peace is a stress-free state of security and calmness
+          </div>
+          <div class="detail-experience">
+            📍Kinshasa | 📅 24th Oct 2019
+          </div>
+
+        </div>
+        <div class="carousel-cell">
+          <div>
+            <img src="./assets/img/experience1.jpg" alt="" />
+          </div>
+          <div class="title-carousel">
+            Peace is a stress-free state of security and calmness
+          </div>
+          <div class="detail-experience">
+            📍Kinshasa | 📅 24th Oct 2019
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="categories">
+        <div class="category-title">
+          <span>Gender and civic engagement</span>
+        </div>
+        <div class="articles">
+
+          <div class="experiences">
+            <a href="./singleArticle.html">
+              <div class="experience">
+                <div>
+                  <img src="./assets/img/experience1.jpg" alt="" />
+                </div>
+                <div class="title-experience">
+                  Peace is a stress-free state of security and calmness
+                </div>
+                <div class="detail-experience">
+                  EmaBush 2 days ago | &#128338; 4 min to read
+                </div>
+              </div>
+            </a>
+
             <div class="experience">
               <div>
                 <img src="./assets/img/experience1.jpg" alt="" />
@@ -93,240 +162,227 @@
                 EmaBush 2 days ago | &#128338; 4 min to read
               </div>
             </div>
-          </a>
-
-          <div class="experience">
-            <div>
-              <img src="./assets/img/experience1.jpg" alt="" />
-            </div>
-            <div class="title-experience">
-              Peace is a stress-free state of security and calmness
-            </div>
-            <div class="detail-experience">
-              EmaBush 2 days ago | &#128338; 4 min to read
+            <div class="experience">
+              <div>
+                <img src="./assets/img/experience1.jpg" alt="" />
+              </div>
+              <div class="title-experience">
+                Peace is a stress-free state of security and calmness
+              </div>
+              <div class="detail-experience">
+                EmaBush 2 days ago | &#128338; 4 min to read
+              </div>
             </div>
           </div>
-          <div class="experience">
-            <div>
-              <img src="./assets/img/experience1.jpg" alt="" />
+          <div class="pagination">
+            <a href="#"><span>&#10094;</span></a> &nbsp; | &nbsp;
+            <a href="#"><span>&#10095;</span></a>
+          </div>
+          <div class="most-seen">
+            <div class="most-seen-experience">
+              <div class="img-most-seen">
+                <img src="./assets//img/experience1.jpg" alt="" />
+              </div>
+              <div class="details-most-seen">
+                <div class="title-most-seen">
+                  Peace is a stress-free state of security and calmness
+                </div>
+                <div class="detail-most-seen">&#128172; 0 | &#128065; 460</div>
+              </div>
             </div>
-            <div class="title-experience">
-              Peace is a stress-free state of security and calmness
+            <div class="most-seen-experience">
+              <div class="img-most-seen">
+                <img src="./assets//img/experience1.jpg" alt="" />
+              </div>
+              <div class="details-most-seen">
+                <div class="title-most-seen">
+                  Peace is a stress-free state of security and calmness
+                </div>
+                <div class="detail-most-seen">&#128172; 0 | &#128065; 460</div>
+              </div>
             </div>
-            <div class="detail-experience">
-              EmaBush 2 days ago | &#128338; 4 min to read
+            <div class="most-seen-experience">
+              <div class="img-most-seen">
+                <img src="./assets//img/experience1.jpg" alt="" />
+              </div>
+              <div class="details-most-seen">
+                <div class="title-most-seen">
+                  Peace is a stress-free state of security and calmness
+                </div>
+                <div class="detail-most-seen">&#128172; 0 | &#128065; 460</div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="pagination">
-          <a href="#"><span>&#10094;</span></a> &nbsp; | &nbsp;
-          <a href="#"><span>&#10095;</span></a>
+        <div class="category-title">
+          <span>Media for peace</span>
         </div>
-        <div class="most-seen">
-          <div class="most-seen-experience">
-            <div class="img-most-seen">
-              <img src="./assets//img/experience1.jpg" alt="" />
-            </div>
-            <div class="details-most-seen">
-              <div class="title-most-seen">
+        <div class="articles">
+          <div class="experiences">
+            <div class="experience">
+              <div>
+                <img src="./assets/img/experience1.jpg" alt="" />
+              </div>
+              <div class="title-experience">
                 Peace is a stress-free state of security and calmness
               </div>
-              <div class="detail-most-seen">&#128172; 0 | &#128065; 460</div>
+              <div class="detail-experience">
+                EmaBush 2 days ago | &#128338; 4 min to read
+              </div>
             </div>
-          </div>
-          <div class="most-seen-experience">
-            <div class="img-most-seen">
-              <img src="./assets//img/experience1.jpg" alt="" />
-            </div>
-            <div class="details-most-seen">
-              <div class="title-most-seen">
+            <div class="experience">
+              <div>
+                <img src="./assets/img/experience1.jpg" alt="" />
+              </div>
+              <div class="title-experience">
                 Peace is a stress-free state of security and calmness
               </div>
-              <div class="detail-most-seen">&#128172; 0 | &#128065; 460</div>
+              <div class="detail-experience">
+                EmaBush 2 days ago | &#128338; 4 min to read
+              </div>
             </div>
-          </div>
-          <div class="most-seen-experience">
-            <div class="img-most-seen">
-              <img src="./assets//img/experience1.jpg" alt="" />
-            </div>
-            <div class="details-most-seen">
-              <div class="title-most-seen">
+            <div class="experience">
+              <div>
+                <img src="./assets/img/experience1.jpg" alt="" />
+              </div>
+              <div class="title-experience">
                 Peace is a stress-free state of security and calmness
               </div>
-              <div class="detail-most-seen">&#128172; 0 | &#128065; 460</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="category-title">
-        <span>Media for peace</span>
-      </div>
-      <div class="articles">
-        <div class="experiences">
-          <div class="experience">
-            <div>
-              <img src="./assets/img/experience1.jpg" alt="" />
-            </div>
-            <div class="title-experience">
-              Peace is a stress-free state of security and calmness
-            </div>
-            <div class="detail-experience">
-              EmaBush 2 days ago | &#128338; 4 min to read
-            </div>
-          </div>
-          <div class="experience">
-            <div>
-              <img src="./assets/img/experience1.jpg" alt="" />
-            </div>
-            <div class="title-experience">
-              Peace is a stress-free state of security and calmness
-            </div>
-            <div class="detail-experience">
-              EmaBush 2 days ago | &#128338; 4 min to read
-            </div>
-          </div>
-          <div class="experience">
-            <div>
-              <img src="./assets/img/experience1.jpg" alt="" />
-            </div>
-            <div class="title-experience">
-              Peace is a stress-free state of security and calmness
-            </div>
-            <div class="detail-experience">
-              EmaBush 2 days ago | &#128338; 4 min to read
-            </div>
-          </div>
-        </div>
-        <div class="pagination">
-          <a href="#"><span>&#10094;</span></a> &nbsp; | &nbsp;
-          <a href="#"><span>&#10095;</span></a>
-        </div>
-        <div class="most-seen">
-          <div class="most-seen-experience">
-            <div class="img-most-seen">
-              <img src="./assets//img/experience1.jpg" alt="" />
-            </div>
-            <div class="details-most-seen">
-              <div class="title-most-seen">
-                Peace is a stress-free state of security and calmness
+              <div class="detail-experience">
+                EmaBush 2 days ago | &#128338; 4 min to read
               </div>
-              <div class="detail-most-seen">&#128172; 0 | &#128065; 460</div>
             </div>
           </div>
-          <div class="most-seen-experience">
-            <div class="img-most-seen">
-              <img src="./assets//img/experience1.jpg" alt="" />
-            </div>
-            <div class="details-most-seen">
-              <div class="title-most-seen">
-                Peace is a stress-free state of security and calmness
-              </div>
-              <div class="detail-most-seen">&#128172; 0 | &#128065; 460</div>
-            </div>
+          <div class="pagination">
+            <a href="#"><span>&#10094;</span></a> &nbsp; | &nbsp;
+            <a href="#"><span>&#10095;</span></a>
           </div>
-          <div class="most-seen-experience">
-            <div class="img-most-seen">
-              <img src="./assets//img/experience1.jpg" alt="" />
-            </div>
-            <div class="details-most-seen">
-              <div class="title-most-seen">
-                Peace is a stress-free state of security and calmness
+          <div class="most-seen">
+            <div class="most-seen-experience">
+              <div class="img-most-seen">
+                <img src="./assets//img/experience1.jpg" alt="" />
               </div>
-              <div class="detail-most-seen">&#128172; 0 | &#128065; 460</div>
+              <div class="details-most-seen">
+                <div class="title-most-seen">
+                  Peace is a stress-free state of security and calmness
+                </div>
+                <div class="detail-most-seen">&#128172; 0 | &#128065; 460</div>
+              </div>
+            </div>
+            <div class="most-seen-experience">
+              <div class="img-most-seen">
+                <img src="./assets//img/experience1.jpg" alt="" />
+              </div>
+              <div class="details-most-seen">
+                <div class="title-most-seen">
+                  Peace is a stress-free state of security and calmness
+                </div>
+                <div class="detail-most-seen">&#128172; 0 | &#128065; 460</div>
+              </div>
+            </div>
+            <div class="most-seen-experience">
+              <div class="img-most-seen">
+                <img src="./assets//img/experience1.jpg" alt="" />
+              </div>
+              <div class="details-most-seen">
+                <div class="title-most-seen">
+                  Peace is a stress-free state of security and calmness
+                </div>
+                <div class="detail-most-seen">&#128172; 0 | &#128065; 460</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="category-title">
-        <span>Government corruption</span>
-      </div>
-      <div class="articles">
-        <div class="experiences">
-          <div class="experience">
-            <div>
-              <img src="./assets/img/experience1.jpg" alt="" />
-            </div>
-            <div class="title-experience">
-              Peace is a stress-free state of security and calmness
-            </div>
-            <div class="detail-experience">
-              EmaBush 2 days ago | &#128338; 4 min to read
-            </div>
-          </div>
-          <div class="experience">
-            <div>
-              <img src="./assets/img/experience1.jpg" alt="" />
-            </div>
-            <div class="title-experience">
-              Peace is a stress-free state of security and calmness
-            </div>
-            <div class="detail-experience">
-              EmaBush 2 days ago | &#128338; 4 min to read
-            </div>
-          </div>
-          <div class="experience">
-            <div>
-              <img src="./assets/img/experience1.jpg" alt="" />
-            </div>
-            <div class="title-experience">
-              Peace is a stress-free state of security and calmness
-            </div>
-            <div class="detail-experience">
-              EmaBush 2 days ago | &#128338; 4 min to read
-            </div>
-          </div>
+        <div class="category-title">
+          <span>Government corruption</span>
         </div>
-        <div class="pagination">
-          <a href="#"><span>&#10094;</span></a> &nbsp; | &nbsp;
-          <a href="#"><span>&#10095;</span></a>
-        </div>
-        <div class="most-seen">
-          <div class="most-seen-experience">
-            <div class="img-most-seen">
-              <img src="./assets//img/experience1.jpg" alt="" />
-            </div>
-            <div class="details-most-seen">
-              <div class="title-most-seen">
+        <div class="articles">
+          <div class="experiences">
+            <div class="experience">
+              <div>
+                <img src="./assets/img/experience1.jpg" alt="" />
+              </div>
+              <div class="title-experience">
                 Peace is a stress-free state of security and calmness
               </div>
-              <div class="detail-most-seen">&#128172; 0 | &#128065; 460</div>
+              <div class="detail-experience">
+                EmaBush 2 days ago | &#128338; 4 min to read
+              </div>
+            </div>
+            <div class="experience">
+              <div>
+                <img src="./assets/img/experience1.jpg" alt="" />
+              </div>
+              <div class="title-experience">
+                Peace is a stress-free state of security and calmness
+              </div>
+              <div class="detail-experience">
+                EmaBush 2 days ago | &#128338; 4 min to read
+              </div>
+            </div>
+            <div class="experience">
+              <div>
+                <img src="./assets/img/experience1.jpg" alt="" />
+              </div>
+              <div class="title-experience">
+                Peace is a stress-free state of security and calmness
+              </div>
+              <div class="detail-experience">
+                EmaBush 2 days ago | &#128338; 4 min to read
+              </div>
             </div>
           </div>
-          <div class="most-seen-experience">
-            <div class="img-most-seen">
-              <img src="./assets//img/experience1.jpg" alt="" />
-            </div>
-            <div class="details-most-seen">
-              <div class="title-most-seen">
-                Peace is a stress-free state of security and calmness
-              </div>
-              <div class="detail-most-seen">&#128172; 0 | &#128065; 460</div>
-            </div>
+          <div class="pagination">
+            <a href="#"><span>&#10094;</span></a> &nbsp; | &nbsp;
+            <a href="#"><span>&#10095;</span></a>
           </div>
-          <div class="most-seen-experience">
-            <div class="img-most-seen">
-              <img src="./assets//img/experience1.jpg" alt="" />
-            </div>
-            <div class="details-most-seen">
-              <div class="title-most-seen">
-                Peace is a stress-free state of security and calmness
+          <div class="most-seen">
+            <div class="most-seen-experience">
+              <div class="img-most-seen">
+                <img src="./assets//img/experience1.jpg" alt="" />
               </div>
-              <div class="detail-most-seen">&#128172; 0 | &#128065; 460</div>
+              <div class="details-most-seen">
+                <div class="title-most-seen">
+                  Peace is a stress-free state of security and calmness
+                </div>
+                <div class="detail-most-seen">&#128172; 0 | &#128065; 460</div>
+              </div>
+            </div>
+            <div class="most-seen-experience">
+              <div class="img-most-seen">
+                <img src="./assets//img/experience1.jpg" alt="" />
+              </div>
+              <div class="details-most-seen">
+                <div class="title-most-seen">
+                  Peace is a stress-free state of security and calmness
+                </div>
+                <div class="detail-most-seen">&#128172; 0 | &#128065; 460</div>
+              </div>
+            </div>
+            <div class="most-seen-experience">
+              <div class="img-most-seen">
+                <img src="./assets//img/experience1.jpg" alt="" />
+              </div>
+              <div class="details-most-seen">
+                <div class="title-most-seen">
+                  Peace is a stress-free state of security and calmness
+                </div>
+                <div class="detail-most-seen">&#128172; 0 | &#128065; 460</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="pagination-experience">
-      <a href="#"><span>&#10094;</span></a>
-      <a href="#" class="active">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">4</a>
-      <a href="#">5</a>
-      <a href="#">6</a>
-      <a href="#"><span>&#10095;</span></a>
-    </div>
+      <div class="pagination-experience">
+        <a href="#"><span>&#10094;</span></a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#"><span>&#10095;</span></a>
+      </div>
   </main>
   <div class="footer">
     <div class="footer-title">peace360</div>
@@ -337,6 +393,7 @@
     </div>
   </div>
   <script src="./assets/js/slider.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
