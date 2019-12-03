@@ -95,7 +95,7 @@ body {
   margin-right: 5.7rem;
 }
 .categories {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 .category-title {
   font-family: "M PLUS 1p", sans-serif;
@@ -927,7 +927,7 @@ h1 {
 } */
 
 .up-coming-event {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 .title-carousel {
   width: 80%;
@@ -938,7 +938,7 @@ h1 {
   color: #5a5554;
   font-size: 0.8rem;
 }
-.detail-carousel{
+.detail-carousel {
   font-family: "M PLUS 1p", sans-serif;
   color: #5a5554a8;
   font-size: 0.6rem;
