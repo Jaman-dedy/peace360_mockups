@@ -739,6 +739,18 @@ h1 {
   height: 100%;
   border-radius: 100%;
 }
+.authentication {
+  margin-top: 8rem;
+  position: fixed;
+  right: 5rem;
+  cursor: pointer;
+}
+.login {
+  margin-top: 10rem;
+  width: 6rem;
+  height: 6rem;
+  background-color: #5a555438;
+}
 .profile-page {
   padding-top: 7rem;
   width: 45rem;
@@ -942,4 +954,53 @@ h1 {
   font-family: "M PLUS 1p", sans-serif;
   color: #5a5554a8;
   font-size: 0.6rem;
+}
+.statistics {
+  margin-top: 5rem;
+  width: 84%;
+  height: 7rem;
+  box-shadow: rgba(0, 0, 0, 0.116) 0px 0px 10px;
+  color: #5a5554;
+  font-family: sans-serif;
+
+  padding-top: 2.5rem;
+  padding-left: 7rem;
+}
+.statistics div {
+  padding-right: 1rem;
+  display: inline-block;
+}
+.number-activist {
+  font-weight: 700;
+  width: fit-content;
+  font-size: x-large;
+  border-right: #54768b 1px solid;
+}
+.title-activist {
+  margin-top: 1rem;
+  width: 6rem;
+  margin-left: 1rem;
+  line-height: 1.2;
+  font-size: 0.8rem;
+}
+
+.peace-mission {
+  grid-area: peace-mission;
+  text-align: center;
+}
+.peace-vision {
+  grid-area: peace-vision;
+  text-align: center;
+}
+
+.vision-mission {
+  margin-left: 13rem;
+  line-height: 1.6;
+  display: grid;
+  grid-template-areas: " peace-mission peace-vision";
+  grid-column-gap: 4rem;
+  margin-top: 2rem;
+  color: #5a5554;
+  font-family: sans-serif;
+  width: 40rem;
 }
