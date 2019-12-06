@@ -742,15 +742,32 @@ h1 {
 .authentication {
   margin-top: 8rem;
   position: fixed;
-  right: 5rem;
-  cursor: pointer;
+  right: 2.5rem;
+  color: #5a5554;
+}
+.authentication a {
+  text-decoration: none;
+  color: #5a5554;
 }
 .login {
-  margin-top: 10rem;
-  width: 6rem;
-  height: 6rem;
-  background-color: #5a555438;
+  margin-bottom: 1rem;
 }
+.login,
+.sign-up {
+  border-radius: 0.3rem;
+  padding: 1rem;
+  text-align: center;
+  width: 4rem;
+  height: 0.7rem;
+  box-shadow: rgba(0, 0, 0, 0.116) 0px 0px 10px;
+}
+.login:hover,
+.sign-up:hover {
+  color: #54768b;
+  box-shadow: #54768b70 0px 0px 10px;
+  cursor: pointer;
+}
+
 .profile-page {
   padding-top: 7rem;
   width: 45rem;
@@ -1000,7 +1017,61 @@ h1 {
   grid-template-areas: " peace-mission peace-vision";
   grid-column-gap: 4rem;
   margin-top: 2rem;
-  color: #5a5554;
+  color: #5a5554af;
   font-family: sans-serif;
   width: 40rem;
+}
+.auth-left-side {
+  grid-area: auth-left-side;
+  background-color: #395161;
+}
+.auth-right-side {
+  grid-area: auth-right-side;
+}
+.auth-main {
+  margin: 0;
+  height: 51.25rem;
+  display: grid;
+  grid-template-areas: "auth-left-side auth-right-side";
+  grid-template-columns: 35% 65%;
+}
+.login-text {
+  text-align: center;
+  padding: 17rem 3rem;
+  color: rgb(246, 243, 243);
+  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+.login-text h1 {
+  font-size: 2rem;
+}
+.login-text p {
+  font-size: 1.2rem;
+}
+.login-text a {
+  color: rgb(246, 243, 243);
+}
+.login-img {
+  padding-top: 2rem;
+  height: 20rem;
+}
+
+.login-img img {
+  height: 100%;
+  width: 100%;
+}
+.login-fom {
+  color: #5a5554;
+  height: 31rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+.login-social-media {
+  font-size: 2rem;
+}
+.login-social-media i {
+  padding-right: .7rem;
+}
+.login-social-media i:hover{
+  cursor: pointer;
 }
