@@ -1070,8 +1070,49 @@ h1 {
   font-size: 2rem;
 }
 .login-social-media i {
-  padding-right: .7rem;
+  padding-right: 0.7rem;
 }
-.login-social-media i:hover{
+.login-social-media i:hover {
   cursor: pointer;
+}
+.form-content {
+  margin-top: 1rem;
+  margin-left: 19rem;
+  width: 20rem;
+  height: 20rem;
+}
+.login-input {
+  padding-top: 1rem;
+}
+.login-input input[type="email"],
+input[type="password"] {
+  width: 100%;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #cecece;
+  height: 3rem;
+}
+.label-email {
+  position: absolute;
+  left: 50.5rem;
+  top: 33.5rem;
+  font-size: 18px;
+  font-weight: 200;
+  color: #cecece;
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+.login-input input[type="email"]:focus ~ .label-email {
+  position: absolute;
+  content: " ";
+  height: 1px;
+  top: 31.5rem;
+  left: 50.5rem;
+  transform: scaleX(0.9);
+  color: #2e424e;
+}
+.enter {
+  transition: all ease 0.5s;
+  width: 10.1%;
+  transform: scaleX(1);
 }
