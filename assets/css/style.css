@@ -1064,7 +1064,7 @@ h1 {
 .login-fom {
   color: #5a5554;
   height: 31rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   text-align: center;
 }
 .login-social-media {
@@ -1102,7 +1102,7 @@ input[type="password"] {
 .label-email {
   position: absolute;
   left: 50.5rem;
-  top: 32.5rem;
+  top: 31.5rem;
   font-size: 18px;
   font-weight: 200;
   color: #5a5554;
@@ -1112,7 +1112,7 @@ input[type="password"] {
 .label-password {
   position: absolute;
   left: 50.5rem;
-  top: 37.5rem;
+  top: 36.5rem;
   font-size: 18px;
   font-weight: 200;
   color: #5a5554;
@@ -1123,7 +1123,7 @@ input[type="password"] {
   position: absolute;
   content: " ";
   height: 1px;
-  top: 30.5rem;
+  top: 29.5rem;
   left: 50.5rem;
   transform: scaleX(0.9);
   color: #2e424e;
@@ -1132,7 +1132,7 @@ input[type="password"] {
   position: absolute;
   content: " ";
   height: 1px;
-  top: 35.5rem;
+  top: 34.5rem;
   left: 50.5rem;
   transform: scaleX(0.9);
   color: #2e424e;
@@ -1171,4 +1171,8 @@ button:after {
 .login-actions span {
   display: block;
   padding-bottom: 1rem;
+}
+.login-actions a {
+  text-decoration: none;
+  color: #395161;
 }
