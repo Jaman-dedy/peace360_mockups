@@ -1034,10 +1034,11 @@ h1 {
   display: grid;
   grid-template-areas: "auth-left-side auth-right-side";
   grid-template-columns: 35% 65%;
+  overflow: hidden;
 }
 .login-text {
   text-align: center;
-  padding: 17rem 3rem;
+  padding: 16.3rem 3rem;
   color: rgb(246, 243, 243);
   font-family: sans-serif;
   font-family: "Open Sans", sans-serif;
@@ -1052,7 +1053,7 @@ h1 {
   color: rgb(246, 243, 243);
 }
 .login-img {
-  padding-top: 2rem;
+  padding-top: 1rem;
   height: 20rem;
 }
 
@@ -1089,16 +1090,32 @@ input[type="password"] {
   width: 100%;
   outline: none;
   border: 0;
-  border-bottom: 1px solid #cecece;
+  border-bottom: 1px solid #5a55545b;
   height: 3rem;
+  font-size: 1rem;
+  color: #5a5554;
+  background-color: #374e5c0e;
+}
+.login-input input[type="password"] {
+  margin-top: 2rem;
 }
 .label-email {
   position: absolute;
   left: 50.5rem;
-  top: 33.5rem;
+  top: 32.5rem;
   font-size: 18px;
   font-weight: 200;
-  color: #cecece;
+  color: #5a5554;
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+.label-password {
+  position: absolute;
+  left: 50.5rem;
+  top: 37.5rem;
+  font-size: 18px;
+  font-weight: 200;
+  color: #5a5554;
   transition: all 0.5s ease;
   pointer-events: none;
 }
@@ -1106,13 +1123,52 @@ input[type="password"] {
   position: absolute;
   content: " ";
   height: 1px;
-  top: 31.5rem;
+  top: 30.5rem;
   left: 50.5rem;
   transform: scaleX(0.9);
   color: #2e424e;
 }
-.enter {
-  transition: all ease 0.5s;
-  width: 10.1%;
-  transform: scaleX(1);
+.login-input input[type="password"]:focus ~ .label-password {
+  position: absolute;
+  content: " ";
+  height: 1px;
+  top: 35.5rem;
+  left: 50.5rem;
+  transform: scaleX(0.9);
+  color: #2e424e;
+}
+.login-input input[type="email"]:focus {
+  border-bottom: 1px solid #2e424e;
+}
+.login-input input[type="password"]:focus {
+  border-bottom: 1px solid #2e424e;
+}
+.login-input input[type="email"]:valid ~ .label-email {
+  opacity: 0;
+}
+.login-input input[type="password"]:valid ~ .label-password {
+  opacity: 0;
+}
+.login-input button {
+  margin-top: 1rem;
+  width: 100%;
+  height: 2.5rem;
+  color: rgb(246, 243, 243);
+  font-family: "Open Sans", sans-serif;
+  background-color: #395161;
+  font-size: 0.9rem;
+}
+.login-input button:hover,
+button:active,
+button:after {
+  cursor: pointer;
+  background-color: #395161df;
+  outline: none;
+}
+.login-actions {
+  margin-top: -6rem;
+}
+.login-actions span {
+  display: block;
+  padding-bottom: 1rem;
 }
