@@ -1099,6 +1099,15 @@ input[type="password"] {
 .login-input input[type="password"] {
   margin-top: 2rem;
 }
+.login-input input[type="checkbox"] {
+  margin-left: -1rem;
+}
+.check-terms {
+}
+.check-terms a {
+  text-decoration: none;
+  color: #2e424e;
+}
 .label-email {
   position: absolute;
   left: 50.5rem;
