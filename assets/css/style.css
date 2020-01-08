@@ -1185,3 +1185,16 @@ button:after {
   text-decoration: none;
   color: #395161;
 }
+.backward {
+  position: fixed;
+  left: 1rem;
+  top: 0.6rem;
+  font-size: 1.8rem;
+  color: rgb(187, 184, 184) !important;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+.backward:hover {
+  color: rgb(245, 240, 240) !important;
+  cursor: pointer;
+}
