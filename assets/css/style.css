@@ -26,7 +26,7 @@ body {
 .menu {
   color: #5a5554;
   margin-left: 15.3rem;
-  font-family: "M PLUS 1p", sans-serif;
+  font-family: 'M PLUS 1p', sans-serif;
   font-size: 1rem;
 }
 .menu a {
@@ -98,7 +98,7 @@ body {
   margin-top: 3rem;
 }
 .category-title {
-  font-family: "M PLUS 1p", sans-serif;
+  font-family: 'M PLUS 1p', sans-serif;
   font-size: 1.2rem;
   border-bottom: solid 1.5px #5a55541f;
   padding-bottom: 1rem;
@@ -119,7 +119,7 @@ body {
 
 .articles {
   display: grid;
-  grid-template-areas: "experience experience mostSeen";
+  grid-template-areas: 'experience experience mostSeen';
   grid-gap: 1.3rem;
 }
 
@@ -143,7 +143,7 @@ body {
   border-radius: 0.4rem;
 }
 .title-experience {
-  font-family: "M PLUS 1p", sans-serif;
+  font-family: 'M PLUS 1p', sans-serif;
   font-weight: 700;
   line-height: 1;
   padding-top: 0.3rem;
@@ -151,7 +151,7 @@ body {
   color: #5a5554;
 }
 .detail-experience {
-  font-family: "M PLUS 1p", sans-serif;
+  font-family: 'M PLUS 1p', sans-serif;
   color: #5a5554a8;
   font-size: 0.7rem;
 }
@@ -172,7 +172,7 @@ body {
   border-radius: 0.5rem;
 }
 .title-most-seen {
-  font-family: "M PLUS 1p", sans-serif;
+  font-family: 'M PLUS 1p', sans-serif;
   font-weight: 700;
   line-height: 1;
   font-size: 0.8rem;
@@ -182,7 +182,7 @@ body {
   padding-left: 0.6rem;
 }
 .detail-most-seen {
-  font-family: "M PLUS 1p", sans-serif;
+  font-family: 'M PLUS 1p', sans-serif;
   color: #5a5554a8;
   font-size: 0.7rem;
   padding-top: 1.2rem;
@@ -221,7 +221,7 @@ body {
 .footer-title {
   font-weight: 700;
   font-size: 3rem;
-  font-family: "M PLUS 1p", sans-serif;
+  font-family: 'M PLUS 1p', sans-serif;
 }
 .social-media {
   font-size: 2rem;
@@ -281,18 +281,18 @@ body {
 .pagination-experience a:hover:not(.active) {
   background-color: #54768b5e;
 }
-.search input[type="text"] {
+.search input[type='text'] {
   border: none;
-  font-family: "M PLUS 1p", sans-serif;
+  font-family: 'M PLUS 1p', sans-serif;
   height: 2rem;
   width: 13rem;
   border-bottom: 1px rgba(0, 0, 0, 0.157) solid;
   outline: none;
 }
-.search input[type="text"]:checked,
-.search input[type="text"]:hover,
-.search input[type="text"]:active,
-.search input[type="text"]:target {
+.search input[type='text']:checked,
+.search input[type='text']:hover,
+.search input[type='text']:active,
+.search input[type='text']:target {
   border-color: #54768b5e;
 }
 
@@ -342,8 +342,8 @@ body {
   width: 15rem;
   display: grid;
   grid-template-areas:
-    "user-avatar user-name follow-user"
-    "user-avatar article-detail article-detail";
+    'user-avatar user-name follow-user'
+    'user-avatar article-detail article-detail';
 }
 .user-avatar {
   width: 4rem;
@@ -437,14 +437,25 @@ body {
 .like {
   margin-top: 0.5rem;
   font-size: 1.7rem;
+  transition: all 0.2s;
 }
 .rate {
   margin: 0.5rem 0rem;
   padding-bottom: 1rem;
 }
 .like:hover {
-  color: #54768b;
+  color: #7e7573c0;
   cursor: pointer;
+}
+.like:focus {
+  outline: none;
+}
+/* .like:focus::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+} */
+.like:active {
+  transform: scaleX(1.4) scaleY(1.6);
 }
 fieldset,
 label {
@@ -474,11 +485,11 @@ h1 {
   font-size: 1.25em;
   font-family: FontAwesome;
   display: inline-block;
-  content: "\f005";
+  content: '\f005';
 }
 
 .rating > .half:before {
-  content: "\f089";
+  content: '\f089';
   position: absolute;
 }
 
@@ -592,10 +603,10 @@ h1 {
   display: grid;
   grid-template-columns: 5rem 28rem 6rem;
   grid-template-areas:
-    "commenter-avatar commenter-details ............... "
-    "...............  comment-posted  comment-posted "
-    "............... comment-posted comment-posted "
-    "............... favorite-comment ............... ";
+    'commenter-avatar commenter-details ............... '
+    '...............  comment-posted  comment-posted '
+    '............... comment-posted comment-posted '
+    '............... favorite-comment ............... ';
   grid-column-gap: 1rem;
   padding-bottom: 1.5rem;
   border-bottom: #5a555425 1px solid;
@@ -886,8 +897,8 @@ h1 {
 .my-followers {
   display: grid;
   grid-template-areas:
-    "my-follower-img my-follower-name"
-    "my-follower-img my-follower-follow-box";
+    'my-follower-img my-follower-name'
+    'my-follower-img my-follower-follow-box';
   grid-template-columns: 6rem 6rem;
   height: 4rem;
   grid-gap: 1rem;
@@ -960,7 +971,7 @@ h1 {
 }
 .title-carousel {
   width: 80%;
-  font-family: "M PLUS 1p", sans-serif;
+  font-family: 'M PLUS 1p', sans-serif;
   line-height: 1;
   padding-top: 0.3rem;
   padding-bottom: 0.7rem;
@@ -968,7 +979,7 @@ h1 {
   font-size: 0.8rem;
 }
 .detail-carousel {
-  font-family: "M PLUS 1p", sans-serif;
+  font-family: 'M PLUS 1p', sans-serif;
   color: #5a5554a8;
   font-size: 0.6rem;
 }
@@ -1014,7 +1025,7 @@ h1 {
   margin-left: 13rem;
   line-height: 1.6;
   display: grid;
-  grid-template-areas: " peace-mission peace-vision";
+  grid-template-areas: ' peace-mission peace-vision';
   grid-column-gap: 4rem;
   margin-top: 2rem;
   color: #5a5554af;
@@ -1032,7 +1043,7 @@ h1 {
   margin: 0;
   height: 51.25rem;
   display: grid;
-  grid-template-areas: "auth-left-side auth-right-side";
+  grid-template-areas: 'auth-left-side auth-right-side';
   grid-template-columns: 35% 65%;
   overflow: hidden;
 }
@@ -1041,7 +1052,7 @@ h1 {
   padding: 16.3rem 3rem;
   color: rgb(246, 243, 243);
   font-family: sans-serif;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .login-text h1 {
   font-size: 2rem;
@@ -1085,8 +1096,8 @@ h1 {
 .login-input {
   padding-top: 1rem;
 }
-.login-input input[type="email"],
-input[type="password"] {
+.login-input input[type='email'],
+input[type='password'] {
   width: 100%;
   outline: none;
   border: 0;
@@ -1096,10 +1107,10 @@ input[type="password"] {
   color: #5a5554;
   background-color: #374e5c0e;
 }
-.login-input input[type="password"] {
+.login-input input[type='password'] {
   margin-top: 2rem;
 }
-.login-input input[type="checkbox"] {
+.login-input input[type='checkbox'] {
   margin-left: -1rem;
 }
 .check-terms {
@@ -1128,34 +1139,34 @@ input[type="password"] {
   transition: all 0.5s ease;
   pointer-events: none;
 }
-.login-input input[type="email"]:focus ~ .label-email {
+.login-input input[type='email']:focus ~ .label-email {
   position: absolute;
-  content: " ";
+  content: ' ';
   height: 1px;
   top: 29.5rem;
   left: 50.5rem;
   transform: scaleX(0.9);
   color: #2e424e;
 }
-.login-input input[type="password"]:focus ~ .label-password {
+.login-input input[type='password']:focus ~ .label-password {
   position: absolute;
-  content: " ";
+  content: ' ';
   height: 1px;
   top: 34.5rem;
   left: 50.5rem;
   transform: scaleX(0.9);
   color: #2e424e;
 }
-.login-input input[type="email"]:focus {
+.login-input input[type='email']:focus {
   border-bottom: 1px solid #2e424e;
 }
-.login-input input[type="password"]:focus {
+.login-input input[type='password']:focus {
   border-bottom: 1px solid #2e424e;
 }
-.login-input input[type="email"]:valid ~ .label-email {
+.login-input input[type='email']:valid ~ .label-email {
   opacity: 0;
 }
-.login-input input[type="password"]:valid ~ .label-password {
+.login-input input[type='password']:valid ~ .label-password {
   opacity: 0;
 }
 .login-input button {
@@ -1163,7 +1174,7 @@ input[type="password"] {
   width: 100%;
   height: 2.5rem;
   color: rgb(246, 243, 243);
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #395161;
   font-size: 0.9rem;
 }
