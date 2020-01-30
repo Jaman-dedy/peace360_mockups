@@ -499,14 +499,13 @@ h1 {
   float: right;
 }
 
-/***** CSS Magic to Highlight Stars on Hover *****/
 
 .rating > input:checked ~ label, /* show gold star when clicked */
 .rating:not(:checked) > label:hover, /* hover current star */
 .rating:not(:checked) > label:hover ~ label {
   color: #d4af37;
   cursor: pointer;
-} /* hover previous stars in list */
+} 
 
 .rating > input:checked + label:hover, /* hover current star when changing rating */
 .rating > input:checked ~ label:hover,
